@@ -1,7 +1,7 @@
 EXPERIMENT - 1
 
 
-over_price=24.95
+cover_price=24.95
 store_price=cover_price - 0.40
 price_for_a_bk= 3.0 + store_price
 price_for_rest_copies=(0.75 +store_price)*59
