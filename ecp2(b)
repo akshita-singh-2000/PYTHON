@@ -1,0 +1,33 @@
+sent = raw_input('Enter a sentence:\n')
+
+print("sentence is:")
+print(sent)
+
+n = sent.find('not') 
+p = sent.find('poor') 
+
+if n == -1 and p== -1:
+	print('there is no not and poor in the sentence')
+else:
+	print('not is at {}th index position'.format(n))
+	print('poor is at {}th index position'.format(p))
+
+
+if sent[p+5:p+8] == 'bad':
+	if n > -1 and p>n:
+		sent = sent.replace(sent[n:p+4],'good')
+		print('New sentence: ')
+		print(sent)
+else:
+	print('There is no bad after poor')
+  
+  Output
+ ace@ace-ThinkCentre-M70e:~/Desktop$ python 2b.py
+Enter a sentence:
+I'm not a poor bad person   
+sentence is:
+I'm not a poor bad person
+not is at 4th index position
+poor is at 10th index position
+New sentence: 
+I'm good bad person
