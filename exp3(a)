@@ -1,0 +1,24 @@
+print("enter words to be added to list")
+mylist = raw_input().split()
+print("\nList is:\n")
+print(mylist)
+x = int(raw_input("Enter Length above which words should be displayed: "))
+
+for i in mylist:
+	if len(i) >= x:
+		print(i)
+
+Output:
+
+ace@ace-ThinkCentre-M70e:~/Desktop$ python 3a.py
+enter words to be added to list
+hi hey hello hieeee yollo namaste
+
+List is:
+
+['hi', 'hey', 'hello', 'hieeee', 'yollo', 'namaste']
+Enter Length above which words should be displayed: 4
+hello
+hieeee
+yollo
+namaste
