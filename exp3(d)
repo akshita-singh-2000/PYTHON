@@ -1,0 +1,21 @@
+print("enter elements of tuple")
+
+l = raw_input().split()
+t=tuple(l)
+print(t)
+
+x = raw_input('Enter a word to be searched in tuple: ')
+
+if x in t :
+	print('Element {} found '.format(x))
+else:
+	print("Elment {} not found".format(x))
+  
+  Output:
+  
+ace@ace-ThinkCentre-M70e:~/Desktop$ python 3d.py
+enter elements of tuple
+a k s h i t a
+('a', 'k', 's', 'h', 'i', 't', 'a')
+Enter a word to be searched in tuple: s
+Element s found 
