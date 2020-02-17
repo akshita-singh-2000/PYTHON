@@ -1,0 +1,17 @@
+init= {'k1':10,'k2':20,'k3':30,'k4':10,'k5':40,'k6':50}
+
+result={}
+print('original dictonary is :\n',init)
+for key,value in init.items():
+	if value not in result.values():
+		result[key]=value
+print('\nAfter Removing duplicate values')
+print(result)
+
+Output:
+
+ace@ace-ThinkCentre-M70e:~/Desktop$ python 3c.py
+('original dictonary is :\n', {'k3': 30, 'k2': 20, 'k1': 10, 'k6': 50, 'k5': 40, 'k4': 10})
+
+After Removing duplicate values
+{'k3': 30, 'k2': 20, 'k1': 10, 'k6': 50, 'k5': 40}
