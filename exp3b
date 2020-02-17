@@ -1,0 +1,32 @@
+print("Enter Elements of first list:\n")
+list1 = raw_input().split()
+
+print("Enter Elements of second list:\n")
+list2 = raw_input().split()
+
+print("List 1 is:\n")
+print(list1)
+print("List 2 is:\n")
+print(list2)
+
+for i in list1:
+	for j in list2:
+		if i==j:
+			print("True , {} is common".format(i))
+			
+Output:
+
+ace@ace-ThinkCentre-M70e:~/Desktop$ python 3b.py
+Enter Elements of first list:
+
+akshita divya aradhana
+Enter Elements of second list:
+
+udit jai chandan akshita
+List 1 is:
+
+['akshita', 'divya', 'aradhana']
+List 2 is:
+
+['udit', 'jai', 'chandan', 'akshita']
+True , akshita is common
