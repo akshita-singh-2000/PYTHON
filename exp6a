@@ -1,0 +1,22 @@
+myset=set()
+print('Enter Elements Of List')
+mylist = input().split()
+print("Original list")
+print(mylist)
+
+for a in mylist:
+	myset.add(a)
+newlist=list(myset)
+
+print("After Removing Duplicates")
+print(newlist)
+
+OUTPUT:
+C:\Users\Admin>cd Desktop\akshita
+C:\Users\Admin\Desktop\akshita>python Exp_6a.py
+Enter Elements Of List
+a a b b c e a b
+Original list
+['a', 'a', 'b', 'b', 'c', 'e', 'a', 'b']
+After Removing Duplicates
+['a', 'b', 'c', 'e']
