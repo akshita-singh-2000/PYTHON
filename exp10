@@ -1,0 +1,24 @@
+print('File Handling\n')
+myfile = open('Abc.txt',mode='w')
+myfile.write('Hello World')
+myfile = open('Abc.txt')
+print(myfile.read())
+myfile = open('Abc.txt',mode='a')
+myfile.write('\nHie')
+print('\nAfter Adding new line\n')
+myfile = open('Abc.txt') 
+print(myfile.read())
+
+OUTPUT:
+
+C:\Users\Admin>cd Desktop\akshita
+
+C:\Users\Admin\Desktop\akshita>python Exp_10.py
+File Handling
+
+Hello World
+
+After Adding new line
+
+Hello World
+Hie
