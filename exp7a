@@ -1,0 +1,29 @@
+class Car():
+
+	def __init__(self,name,model,price):
+		self.name = name
+		self.model = model
+		self.price = price
+
+car1 = Car(name='toyota',model='SUV',price=80000)
+car2 = Car(name='maruti',model='van',price=30000)
+
+print('Car 1 Details:')
+print('Name: {}\nModel: {}\nPrice: ${}'.format(car1.name,car1.model,car1.price))
+
+print('Car 2 Details:')
+print('Name: {}\nModel: {}\nPrice: ${}'.format(car2.name,car2.model,car2.price))
+
+OUTPUT :
+
+C:\Users\Admin>cd Desktop\akshita
+
+C:\Users\Admin\Desktop\akshita>python Exp_7a.py
+Car 1 Details:
+Name: toyota
+Model: SUV
+Price: $80000
+Car 2 Details:
+Name: maruti
+Model: van
+Price: $30000
